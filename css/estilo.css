@@ -1,0 +1,285 @@
+/* el estilo de listas y tipografias las modifique en todas las paginas html */
+.foo {
+      background-color: beige;
+}
+
+li {
+      list-style-type: none;
+      padding: 10px;
+}
+a {
+      text-decoration: none;
+      color: blue;
+}
+a:hover{
+      color: lightblue;
+}
+*{
+      font-family: 'Lora', serif; 
+}
+main{
+      background-image: url(".../assets/img/inicio.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+}
+
+.nav--background {
+      margin-left: 60px;
+      margin-right: 100px;
+      padding-bottom: 2px;
+}
+.nav__item {
+      display: inline;
+}
+.nav__item--background {
+      background-color: beige;
+      font-size: 25px;
+      padding-bottom: 2px;
+      border-width: 5px;
+}
+.header {
+      position: relative;
+
+}
+.header__nav {
+      position: relative;
+      left: 8%;
+}
+.header__logo {
+      margin: auto;
+      padding-bottom: 2px;
+      width: 100px;
+      height: auto;
+}
+img {
+      width: 100px;
+      height: auto;
+      margin: auto;
+      text-align: center;
+}
+.footerFoto {
+      text-align: center;
+}
+.fotoFinal {
+      width: 250px;
+}
+/* Index */ /* utilice margin, padding, border, modifique imagen, alineacion de textos, color de fondo*/
+.bienvenidos article p {
+      color: blue;
+      font-size: 40px;
+      margin-left: 50px;
+      padding-bottom: 5px;
+      border: 10px;
+}
+.saludo article p{
+      text-align: center;
+}
+.contenedorDeInicio {
+     text-align: center; 
+}
+.fotoDeInicio {
+      width: 250px;
+}
+
+/* Tienda */ /* modifique el tamaño de las imagenes, el color de la tipografia*/
+.nombresProductos article h5{
+      color: gray;
+      font-size: 20px;
+      text-align: center;
+}
+.nombresProductos article h6 {
+      font-size: 15px;
+      text-align: center;
+}
+.contenedorTienda {
+      text-align: center;
+}
+
+.blusaValentina {
+      width: 200px;
+}
+.sweaterLondres {
+      width: 200px;
+}
+.blusaSofia {
+      width: 200px;
+}
+.sweaterLisboa {
+      width: 200px;
+}
+.tienda article p{
+      color: blue;
+      font-size: 30px;
+      margin-left: 50px;
+}
+
+/*Contacto */ /* modifique el color */
+.contacto article p{
+      color: blue;
+      font-size: 30px;
+      margin-left: 50px;
+}
+
+/* Politica de cambios */ /* modifique el color, la tipografia y la alineacion*/
+.politica--cambios article h4 {
+      color: blue;
+      font-size: 20px;
+      text-align: center;
+}
+.politica--cambios article p{
+      font-size: 17px;
+      text-align: center;
+}
+.politicasDeCambio article p{
+      color: blue;
+      font-size: 30px;
+      margin-left: 50px;
+}
+
+/* Como cuidar tu HZ */ /* cambie el color, la alineacion*/
+.cuidados article h4 {
+      color: blue;
+      font-size: 20px;
+      text-align: center;
+}
+.cuidados article p{
+      font-size: 17px;
+      text-align: center;
+}
+.comoCuidar article p{
+      color: blue;
+      font-size: 30px;
+      padding-left: 30px;
+}
+
+.contenedorPadre {
+      display: grid;
+      grid-template-areas: 
+      "header header__logo navDer"
+      "main main main"
+      "footer footer footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 250px 600px 420px;
+}
+header {
+      grid-area: header;
+}
+main {
+      grid-area: main;
+}
+footer {
+      grid-area: footer;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+}
+
+.navDer {
+      grid-area: navDer;
+}
+.header__logo {
+      grid-area: header__logo;
+      margin: auto;
+      padding-bottom: 2px;
+      width: 100px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+}
+ul {
+      display: flex;
+      justify-content: right;
+}
+/*media querie mobile*/
+@media only screen and (max-width: 768px){
+      .contenedorPadre {
+      display: grid;
+      grid-template-areas: 
+      "header header__logo navDer"
+      "main main main"
+      "footer footer footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 300px 400px 300px;
+   }
+    header {
+      grid-area: header;
+   }
+    main {
+      grid-area: main;
+   }
+    footer {
+      grid-area: footer;
+      display: flex;
+      flex-direction: column;
+     
+   }
+
+   .navDer {
+      grid-area: navDer;
+   }
+   .header__logo {
+      grid-area: header__logo;
+      
+   }
+    ul {
+      display: flex;
+      justify-content: right;
+   }
+   .nav__item {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      margin-right: 2px;
+      padding-right: 2px;
+      width: 100px;
+      height: 50px;
+   }
+   .fotoTienda {
+      display: grid;
+
+      width: 80%;
+      margin: auto;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto;
+
+      grid-template-areas: "izq der"
+                           "izq2 der2"
+   }
+
+  .izq {
+      grid-area: izq;
+   }
+
+   .der {
+      grid-area: der;
+   }
+
+   .izq2 {
+      grid-area: izq2;
+   }
+
+   .der2 {
+      grid-area: der2;
+   }
+
+   .gridFooter {
+      display: grid;
+
+      width: 50%;
+      margin: auto;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+
+      grid-template-areas: "footerIzq footerDer";
+   }
+   .footerIzq {
+      grid-area: footerIzq;
+   }
+   .footerDer {
+      grid-area: footerDer;
+   }
