@@ -203,32 +203,32 @@ ul {
       "footer footer footer";
       grid-template-columns: 100%;
       grid-template-rows: 300px 400px 300px;
-   }
-    header {
+}
+header {
       grid-area: header;
-   }
-    main {
+} 
+main {
       grid-area: main;
-   }
-    footer {
+}
+footer {
       grid-area: footer;
       display: flex;
       flex-direction: column;
      
-   }
+}
 
-   .navDer {
+.navDer {
       grid-area: navDer;
-   }
-   .header__logo {
+}
+.header__logo {
       grid-area: header__logo;
       
-   }
-    ul {
+}
+ul {
       display: flex;
       justify-content: right;
-   }
-   .nav__item {
+}
+.nav__item {
       display: flex;
       justify-content: flex-end;
       flex-direction: row;
@@ -236,8 +236,8 @@ ul {
       padding-right: 2px;
       width: 100px;
       height: 50px;
-   }
-   .fotoTienda {
+}
+.fotoTienda {
       display: grid;
 
       width: 80%;
@@ -248,25 +248,25 @@ ul {
 
       grid-template-areas: "izq der"
                            "izq2 der2"
-   }
+}
 
-  .izq {
+.izq {
       grid-area: izq;
-   }
+}
 
-   .der {
+.der {
       grid-area: der;
-   }
+}
 
-   .izq2 {
+.izq2 {
       grid-area: izq2;
-   }
+}
 
-   .der2 {
+.der2 {
       grid-area: der2;
-   }
+}
 
-   .gridFooter {
+.gridFooter {
       display: grid;
 
       width: 50%;
@@ -276,10 +276,61 @@ ul {
       grid-template-rows: auto;
 
       grid-template-areas: "footerIzq footerDer";
-   }
-   .footerIzq {
+}
+.footerIzq {
       grid-area: footerIzq;
-   }
-   .footerDer {
+}
+.footerDer {
       grid-area: footerDer;
-   }
+}
+
+footer {
+      background-image: linear-gradient(beige, white);
+}
+.translate {
+      transform: translate(350px, 100px);
+}
+.fotoFinal {
+    transform: translate(200px, 100px);
+}
+
+.footerFoto {
+      height: 100px;
+      transition: heigth 10s;
+}
+ .footerFoto:hover {
+      height: 300px;
+ }
+
+.header__logo {
+      height: 100px;
+      transition: heigth 10s;
+}
+.header__logo:hover {
+      height: 150px;
+}
+
+@keyframes animacionImg {
+      0% {
+            transform: translateY(-20px);
+      }
+      25% {
+            transform: translateX(30px);
+      }
+      50% {
+            transform: scale(2,2);
+      }
+      75% {
+            transform: skew(10deg);
+      }
+      100% {
+            transform: translate(40px);
+      }
+}
+.footerFoto {
+      animation-name: animacionImg;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 20s;
+}
+ 
