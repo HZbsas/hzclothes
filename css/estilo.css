@@ -77,7 +77,7 @@ img {
 .saludo article p{
       text-align: center;
 }
-.contenedorDeInicio {
+.d-block w-100 {
      text-align: center; 
 }
 .fotoDeInicio {
