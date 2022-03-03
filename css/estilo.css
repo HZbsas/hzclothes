@@ -162,7 +162,7 @@ img {
       "main main main"
       "footer footer footer";
       grid-template-columns: 100%;
-      grid-template-rows: 250px 600px 420px;
+      
 }
 header {
       grid-area: header;
@@ -237,7 +237,7 @@ ul {
       width: 100px;
       height: 50px;
 }
-.fotoTienda {
+.d-grid {
       display: grid;
 
       width: 80%;
