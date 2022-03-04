@@ -1,6 +1,7 @@
 /* el estilo de listas y tipografias las modifique en todas las paginas html */
 .foo {
       background-color: beige;
+      text-align: center;
 }
 
 li {
@@ -9,10 +10,10 @@ li {
 }
 a {
       text-decoration: none;
-      color: blue;
+      
 }
 a:hover{
-      color: lightblue;
+       color: lightblue; 
 }
 *{
       font-family: 'Lora', serif; 
@@ -24,6 +25,7 @@ main{
       background-repeat: no-repeat;
       background-size: cover;
       margin-bottom: 50px;
+      text-align: center;
 }
 
 .nav--background {
@@ -73,6 +75,14 @@ img {
       margin-left: 50px;
       padding-bottom: 5px;
       border: 10px;
+      text-align: center;
+}
+
+.carousel-inner {
+      height: 1000px;
+}
+.carousel-img {
+      object-fit: cover;
 }
 .saludo article p{
       text-align: center;
@@ -112,16 +122,47 @@ img {
 }
 .tienda article p{
       color: blue;
-      font-size: 30px;
+      font-size: 25px;
       margin-left: 50px;
+}
+.shop {
+      text-align: center;
+      font-size: 30px;
+}
+.agradecimiento {
+      text-align: center;
+      font-size: 20px;
+}
+.d-grid {
+      display: grid;
+
+      width: 80%;
+      margin: auto;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto;
+
+      grid-template-areas: "izq der"
+                           "izq2 der2"
 }
 
-/*Contacto */ /* modifique el color */
-.contacto article p{
-      color: blue;
-      font-size: 30px;
-      margin-left: 50px;
+.izq {
+      grid-area: izq;
 }
+
+.der {
+      grid-area: der;
+}
+
+.izq2 {
+      grid-area: izq2;
+}
+
+.der2 {
+      grid-area: der2;
+}
+
+
 
 /* Politica de cambios */ /* modifique el color, la tipografia y la alineacion*/
 .politica--cambios article h4 {
@@ -135,14 +176,14 @@ img {
 }
 .politicasDeCambio article p{
       color: blue;
-      font-size: 30px;
+      font-size: 25px;
       margin-left: 50px;
 }
 
 /* Como cuidar tu HZ */ /* cambie el color, la alineacion*/
 .cuidados article h4 {
       color: blue;
-      font-size: 20px;
+      font-size: 25px;
       text-align: center;
 }
 .cuidados article p{
@@ -202,7 +243,6 @@ ul {
       "main main main"
       "footer footer footer";
       grid-template-columns: 100%;
-      grid-template-rows: 300px 400px 300px;
 }
 header {
       grid-area: header;
@@ -332,5 +372,12 @@ footer {
       animation-iteration-count: infinite;
       animation-timing-function: ease-in;
       animation-duration: 20s;
+}
+· {
+      background-color: beige;
+}
+.envios {
+      text-align: center;
+      font-size: 15px;
 }
  
