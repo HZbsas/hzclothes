@@ -1,0 +1,47 @@
+.foo {
+      background-color: beige;
+      text-align: center;
+}
+.footerFoto {
+      text-align: center;
+}
+.fotoFinal {
+      width: 250px;
+}
+footer {
+      grid-area: footer;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+}
+.fotoFinal {
+    transform: translate(200px, 100px);
+}
+
+.footerFoto {
+      height: 100px;
+      transition: heigth 10s;
+}
+ .footerFoto:hover {
+      height: 300px;
+}
+.footerIzq {
+      grid-area: footerIzq;
+}
+.footerDer {
+      grid-area: footerDer;
+}
+.footerFoto {
+      animation-name: animacionImg;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 20s;
+}
+· {
+      background-color: beige;
+}
+.envios {
+      text-align: center;
+      font-size: 15px;
+}
+ 
