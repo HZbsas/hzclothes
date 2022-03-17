@@ -1,0 +1,43 @@
+$full-ancho: 100px; 
+$quarter-ancho: 250px;
+
+.header__logo {
+	width: $full-ancho;
+}
+
+img {
+	width: $full-ancho;
+}
+
+.fotoFinal{
+	width: $quarter-ancho;
+}
+
+.fotoDeInicio {
+	width: $quarter-ancho;
+}
+
+.blusaValentina {
+      width: $quarter-ancho-50;
+}
+.sweaterLondres {
+      width: $quarter-ancho-50;
+}
+.blusaSofia {
+      width: $quarter-ancho-50;
+}
+.sweaterLisboa {
+      width: $quarter-ancho-50;
+}
+
+.d-grid {
+	width: $full-ancho-20;
+}
+
+.nav__item {
+	width: $full-ancho;
+}
+
+.gridFooter {
+	width: $full-ancho/(52-50);
+}

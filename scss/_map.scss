@@ -1,0 +1,23 @@
+$coloresPrincipales:(
+  colorPrimario:blue,
+  colorSecundario:beige 
+);
+
+@each $clave, $valor in $coloresPrincipales {
+	.#{$clave}{
+	  color: $valor;
+	}
+}
+
+$estilos:(
+    color:pink,
+    centro:center,
+    tFuente:35px,
+    padding:10px
+);
+
+div{
+	color:map-get($estilos,color);
+	text-align:map-get($estilos,centro);
+	font-size:map-get($estilos,tFuente);
+}

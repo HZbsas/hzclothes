@@ -1,0 +1,11 @@
+.boton {
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	color: blue;
+}
+
+.boton-enviar {
+	@extend .boton;
+	color: white;
+}
