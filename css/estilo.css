@@ -159,6 +159,7 @@ img {
 
       grid-template-areas: "izq der"
                            "izq2 der2"
+                           "izq3 der3"
 }
 
 .izq {
@@ -176,7 +177,12 @@ img {
 .der2 {
       grid-area: der2;
 }
-
+.izq3 {
+      grid-area: izq3;
+}
+.der3 {
+      grid-area: der3;
+}
 
 
 /* Politica de cambios */ /* modifique el color, la tipografia y la alineacion*/
