@@ -110,16 +110,31 @@ img {
 
 .blusaValentina {
       width: 200px;
+      height: 270px;
 }
 .sweaterLondres {
       width: 200px;
 }
+.blusaamarilla {
+      width: 200px;
+      height: 290px;
+}
+.blusaceleste {
+      width: 200px;
+      height: 295px;
+}
+
 .blusaSofia {
       width: 200px;
 }
 .sweaterLisboa {
       width: 200px;
+      height: 276px;
 }
+.blusablanca {
+      width: 200px;
+}
+
 .tienda article p{
       color: blue;
       font-size: 25px;
@@ -254,7 +269,7 @@ footer {
       grid-area: footer;
       display: flex;
       flex-direction: column;
-     
+    
 }
 
 .navDer {
@@ -367,12 +382,12 @@ footer {
             transform: translate(40px);
       }
 }
-.footerFoto {
+/*.footerFoto {
       animation-name: animacionImg;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in;
       animation-duration: 20s;
-}
+} */
 · {
       background-color: beige;
 }
@@ -380,4 +395,72 @@ footer {
       text-align: center;
       font-size: 15px;
 }
+
+.col-1 {
+      padding: 5px;
+}
+
+.col-2 {
+      padding: 10px;
+}
  
+.col-3{
+      padding: 15px;
+} 
+
+.col-4 {
+      padding: 20px;
+}
+
+.col-5 {
+      padding: 25px;
+}
+
+.col-6 {
+      padding: 30px;
+}
+
+.col-7 {
+      padding: 35px;
+}
+
+.col-8 {
+      padding: 40px;
+}
+
+.col-9 {
+      padding: 45px;
+}
+
+.col-10 {
+      padding: 50px;
+}
+
+.font-blue {
+      color: blue;
+      background-color: transparent; }
+
+.font-beige {
+      color: beige;
+      background-color: transparent; }
+
+.colorPrimario {
+      color: blue; }
+
+.colorSecundario {
+      color: beige; }
+
+.boton, .boton-enviar {
+      width: 100px;
+      height: 40px;
+      font-size: 20px;
+      color: blue;
+}
+
+.boton-enviar {
+      color: white;
+}
+
+.div {
+     color: blue;
+     background-color: beige; }

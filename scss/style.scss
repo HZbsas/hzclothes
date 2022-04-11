@@ -1,5 +1,11 @@
 @import "footer";
 @import "nav";
+@import "operadores";
+@import "condicionales";
+@import "bucles";
+@import "map";
+@import "extend";
+@import "mixin";
 /* el estilo de listas y tipografias las modifique en todas las paginas html */
 *{
       font-family: 'Lora', serif; 
